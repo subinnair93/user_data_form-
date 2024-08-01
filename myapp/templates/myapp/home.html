@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Form</title>
+</head>
+<body>
+    <form action="{% url 'home' %}" method="post">
+        {% csrf_token %}
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="firstname" name="firstname"><br><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lastname" name="lastname"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

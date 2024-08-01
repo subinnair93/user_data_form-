@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Form</title>
+</head>
+<body>
+    <form action="{% url 'user' %}" method="post">
+        {% csrf_token %}
+        Title : <input type="text" name="title"/>
+        Year : <input type="text" name="year"/>
+        Summary : <input type="text" name="desc"/>
+        <button type="submit">Create</button>
+    </form>
+</body>
+</html>

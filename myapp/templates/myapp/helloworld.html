@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Subin S Nair</h1>
+        <p>Welcome to my profile page!</p>
+    </header>
+    <section class="about-me">
+        <img src="{% static 'myapp/images/WhatsApp Image 2024-07-23 at 12.33.19 AM.jpeg' %}" alt="Profile Picture" class="profile-pic">
+        <h2>About Me</h2>
+        <p>Hello! I'm Subin S Nair, a tech enthusiast with experience in software development and data science. I have worked with various technologies including Python, Django, and ERP solutions. I'm passionate about learning new frameworks and improving my technical skills.</p>
+    </section>
+    <footer>
+        <p>Contact: <a href="mailto:subin@example.com">subin@example.com</a></p>
+    </footer>
+</body>
+</html>
